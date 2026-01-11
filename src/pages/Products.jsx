@@ -1,7 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { products } from '../data/mockData';
-import { FaFilter } from 'react-icons/fa';
 
 const Products = () => {
     const location = useLocation();

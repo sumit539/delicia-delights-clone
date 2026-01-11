@@ -13,7 +13,8 @@ const Home = () => {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
         }
-    }, [window.location.hash]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div className="flex flex-col">

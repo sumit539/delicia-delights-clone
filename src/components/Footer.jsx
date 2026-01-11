@@ -37,10 +37,10 @@ const Footer = () => {
                         Bringing the finest canned foods and fresh delights to your table since 2004. Quality, taste, and tradition in every jar.
                     </p>
                     <div className="flex space-x-4">
-                        <a href="#" className="text-xl hover:text-primary transition-colors"><FaFacebook /></a>
-                        <a href="#" className="text-xl hover:text-primary transition-colors"><FaTwitter /></a>
-                        <a href="#" className="text-xl hover:text-primary transition-colors"><FaInstagram /></a>
-                        <a href="#" className="text-xl hover:text-primary transition-colors"><FaLinkedin /></a>
+                        <button className="text-xl hover:text-primary transition-colors focus:outline-none" aria-label="Facebook"><FaFacebook /></button>
+                        <button className="text-xl hover:text-primary transition-colors focus:outline-none" aria-label="Twitter"><FaTwitter /></button>
+                        <button className="text-xl hover:text-primary transition-colors focus:outline-none" aria-label="Instagram"><FaInstagram /></button>
+                        <button className="text-xl hover:text-primary transition-colors focus:outline-none" aria-label="LinkedIn"><FaLinkedin /></button>
                     </div>
                 </div>
 
