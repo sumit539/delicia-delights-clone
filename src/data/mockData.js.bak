@@ -1,0 +1,97 @@
+// Import local images
+import pineappleJam from '../assets/products/pineapple-jam.jpg';
+import appleJam from '../assets/products/apple-jam.jpg';
+import mangoJam from '../assets/products/mango-jam.jpg';
+import strawberryJam from '../assets/products/strawberry-jam.jpg';
+import sarsonSaag from '../assets/products/sarson-ka-saag.jpg';
+import dalMakhani from '../assets/products/dal-makhani.jpg';
+import cannedLitchi from '../assets/products/canned-litchi.jpg';
+import mangoChutney from '../assets/products/mango-chutney.jpg';
+
+export const products = [
+    // Jams
+    { id: 1, name: "Pineapple Jam", description: "Sweet and tangy jam made from fresh pineapples.", image: pineappleJam, category: "Jams", sizes: ["200g", "500g", "1kg"] },
+    { id: 2, name: "Apple Jam", description: "Rich apple goodness in every spoon.", image: appleJam, category: "Jams", sizes: ["200g", "500g", "1kg"] },
+    { id: 3, name: "Mango Jam", description: "The taste of real mangoes preserved for you.", image: mangoJam, category: "Jams", sizes: ["200g", "500g", "1kg"] },
+    { id: 4, name: "Strawberry Jam", description: "Classic strawberry jam, a favorite for kids.", image: strawberryJam, category: "Jams", sizes: ["200g", "500g", "1kg"] },
+    { id: 5, name: "Orange Jam", description: "Zesty orange marmalade jam.", image: pineappleJam, category: "Jams", sizes: ["200g", "500g", "1kg"] },
+
+    // Chutneys
+    { id: 6, name: "Guava Imli Chutney", description: "Tangy blend of guava and tamarind.", image: mangoChutney, category: "Chutneys", sizes: ["300g", "1kg"] },
+    { id: 7, name: "Mango Chutney", description: "Sweet and spicy mango chutney.", image: mangoChutney, category: "Chutneys", sizes: ["300g", "1kg"] },
+    { id: 8, name: "Roasted Chilli Garlic Chutney", description: "Spicy roasted chilli with a garlic kick.", image: mangoChutney, category: "Chutneys", sizes: ["300g", "1kg"] },
+    { id: 9, name: "Tomato Chutney", description: "Traditional tomato chutney.", image: mangoChutney, category: "Chutneys", sizes: ["300g", "1kg"] },
+
+    // Pickles
+    { id: 30, name: "Mango Pickle", description: "Traditional spicy mango pickle.", image: mangoChutney, category: "Pickles", sizes: ["400g", "1kg", "5kg"] },
+    { id: 31, name: "Mixed Pickle", description: "A mix of fresh vegetables pickled to perfection.", image: mangoChutney, category: "Pickles", sizes: ["400g", "1kg", "5kg"] },
+    { id: 32, name: "Green Chilli Pickle", description: "Spicy green chillies pickled in oil.", image: mangoChutney, category: "Pickles", sizes: ["400g", "1kg"] },
+
+    // Ready to Eat
+    { id: 10, name: "Sarson Ka Saag", description: "Authentic North Indian delicacy.", image: sarsonSaag, category: "Ready to Eat", sizes: ["300g", "500g"] },
+    { id: 11, name: "Dal Makhani", description: "Creamy and rich Dal Makhani.", image: dalMakhani, category: "Ready to Eat", sizes: ["300g", "500g"] },
+    { id: 12, name: "Palak Paneer", description: "Cottage cheese in spinach gravy.", image: sarsonSaag, category: "Ready to Eat", sizes: ["300g", "500g"] },
+    { id: 13, name: "Matar Paneer", description: "Peas and cottage cheese curry.", image: dalMakhani, category: "Ready to Eat", sizes: ["300g", "500g"] },
+    { id: 14, name: "Kadhi Pakora", description: "Yogurt curry with fritters.", image: sarsonSaag, category: "Ready to Eat", sizes: ["300g", "500g"] },
+    { id: 25, name: "Chana Masala", description: "Spicy chickpea curry.", image: dalMakhani, category: "Ready to Eat", sizes: ["300g", "500g"] },
+    { id: 26, name: "Rajma Masala", description: "Kidney beans in thick gravy.", image: dalMakhani, category: "Ready to Eat", sizes: ["300g", "500g"] },
+    { id: 27, name: "Baingan ka Bharta", description: "Smoky roasted eggplant mash.", image: sarsonSaag, category: "Ready to Eat", sizes: ["300g", "500g"] },
+
+    // Canned Fruits
+    { id: 15, name: "Canned Litchi", description: "Juicy litchis canned in syrup.", image: cannedLitchi, category: "Canned Food", sizes: ["400g", "800g"] },
+    { id: 16, name: "Canned Mango Slice", description: "Fresh mango slices preserved.", image: cannedLitchi, category: "Canned Food", sizes: ["400g", "800g"] },
+    { id: 17, name: "Canned Peach Halves", description: "Premium peach halves in syrup.", image: cannedLitchi, category: "Canned Food", sizes: ["400g", "800g"] },
+    { id: 18, name: "Canned Pear Halves", description: "Sweet pear halves ready to eat.", image: cannedLitchi, category: "Canned Food", sizes: ["400g", "800g"] },
+    { id: 19, name: "Canned Pineapple Slice", description: "Tropical pineapple slices.", image: cannedLitchi, category: "Canned Food", sizes: ["400g", "800g"] },
+    { id: 28, name: "Canned Red Cherries", description: "Sweet red cherries preserved in syrup.", image: cannedLitchi, category: "Canned Food", sizes: ["400g", "800g"] },
+
+    // Sauces & Ketchup
+    { id: 20, name: "Tomato Ketchup", description: "Classic tomato ketchup.", image: mangoChutney, category: "Sauces", sizes: ["200g", "500g", "1kg", "5kg"] },
+    { id: 21, name: "Baked Beans", description: "Beans in tomato sauce.", image: mangoChutney, category: "Sauces", sizes: ["400g"] },
+    { id: 22, name: "Rainbow Sauce", description: "A mix of flavors in one sauce.", image: mangoChutney, category: "Sauces", sizes: ["200g", "500g"] },
+    { id: 23, name: "Green Chili Sauce", description: "Spicy green chili sauce.", image: mangoChutney, category: "Sauces", sizes: ["200g", "500g"] },
+    { id: 24, name: "Tomato Puree", description: "Rich tomato puree for cooking.", image: mangoChutney, category: "Sauces", sizes: ["200g", "800g"] }
+];
+
+export const clientele = [
+    { name: "Bharti Retail", image: "https://catalog.wlimg.com/1/304027/small-images/bharti-retail-1227736.jpg" },
+    { name: "Bharti Walmart", image: "https://catalog.wlimg.com/1/304027/small-images/bharti-walmart-1227737.jpg" },
+    { name: "Carrefour", image: "https://catalog.wlimg.com/1/304027/small-images/carrefour-1227738.jpg" },
+    { name: "Dabur", image: "https://catalog.wlimg.com/1/304027/small-images/dabur-1227739.jpg" },
+    { name: "Desai Brothers Ltd.", image: "https://catalog.wlimg.com/1/304027/small-images/desai-brothers-ltd-1227741.jpg" },
+    { name: "Earthy Foods", image: "https://catalog.wlimg.com/1/304027/small-images/earthy-foods-1227742.jpg" },
+    { name: "Spencer's", image: "https://catalog.wlimg.com/1/304027/small-images/spencer-s-1227744.jpg" }
+];
+
+export const testimonials = [
+    {
+        id: 1,
+        name: "Rajesh Kumar",
+        role: "Retail Partner",
+        text: "Delicia Delights has been our trusted supplier for over 5 years. The quality of their jams is unmatched in the market."
+    },
+    {
+        id: 2,
+        name: "Sarah Jenkins",
+        role: "Hotel Manager",
+        text: "Our guests love the breakfast spread, especially the mixed fruit jam and canned pineapples. Consistently great taste!"
+    },
+    {
+        id: 3,
+        name: "Amit Patel",
+        role: "Food Distributor",
+        text: "Working with Delicia Foods has been a pleasure. Their products fly off the shelves, and customer satisfaction is always high."
+    },
+    {
+        id: 4,
+        name: "Priya Sharma",
+        role: "Restaurant Owner",
+        text: "The ready-to-eat products have been a game changer for our menu. Authentic taste with consistent quality every single time."
+    },
+    {
+        id: 5,
+        name: "David Wilson",
+        role: "Export Partner",
+        text: "Delicia's international quality standards make them our preferred choice for exports. Reliable delivery and excellent product range."
+    }
+];
