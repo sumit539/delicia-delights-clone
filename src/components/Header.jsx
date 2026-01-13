@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FaBars, FaTimes, FaPhone, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import CartIcon from './CartIcon';
+import CartSidebar from './CartSidebar';
+
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +28,11 @@ const Header = () => {
         { name: 'About Us', path: '/about' },
         { name: 'Products Range', path: '/products-range' },
         { name: 'Products', path: '/products' },
+        { name: 'Track Order', path: '/track-order' },
         { name: 'Clientele', path: '/#clientele', isHash: true },
         { name: 'Contact Us', path: '/contact' },
     ];
+
 
     return (
         <header className="w-full shadow-md z-50 relative">
@@ -85,14 +90,18 @@ const Header = () => {
                                 </NavLink>
                             )
                         ))}
-                        {/* Search Icon & Input */}
-                        <div className="relative flex items-center">
+                    </nav>
+
+                    {/* Search & Cart Actions */}
+                    <div className="hidden lg:flex items-center gap-2">
+                        {/* Search */}
+                        <div className="relative">
                             {isSearchOpen && (
-                                <form onSubmit={handleSearch} className="absolute right-10 top-1/2 -translate-y-1/2">
+                                <form onSubmit={handleSearch} className="absolute right-12 top-1/2 -translate-y-1/2 z-10">
                                     <input
                                         type="text"
-                                        placeholder="Search..."
-                                        className="border border-gray-300 rounded-full px-4 py-1 text-sm focus:outline-none focus:border-primary w-48 shadow-sm"
+                                        placeholder="Search products..."
+                                        className="border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-primary w-64 shadow-md"
                                         value={searchQuery}
                                         onChange={(e) => setSearchQuery(e.target.value)}
                                         autoFocus
@@ -101,14 +110,19 @@ const Header = () => {
                             )}
                             <button
                                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                                className="text-dark hover:text-primary transition-colors ml-2"
+                                className="p-2 text-dark hover:text-primary transition-colors"
+                                aria-label="Search"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                 </svg>
                             </button>
                         </div>
-                    </nav>
+
+                        {/* Cart Icon */}
+                        <CartIcon />
+                    </div>
+
 
                     {/* CTA Button */}
                     <div className="hidden lg:block">
@@ -117,10 +131,13 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    {/* Mobile Menu Button */}
-                    <button className="md:hidden text-2xl text-dark" onClick={toggleMenu}>
-                        {isOpen ? <FaTimes /> : <FaBars />}
-                    </button>
+                    {/* Mobile Cart & Menu */}
+                    <div className="flex items-center gap-2 lg:hidden">
+                        <CartIcon />
+                        <button className="text-2xl text-dark" onClick={toggleMenu}>
+                            {isOpen ? <FaTimes /> : <FaBars />}
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -159,6 +176,7 @@ const Header = () => {
                     </nav>
                 </div>
             )}
+            <CartSidebar />
         </header>
     );
 };

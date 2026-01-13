@@ -17,6 +17,11 @@ export const products = [
         image: pineappleJam,
         category: "Jams",
         sizes: ["200g", "500g", "1kg"],
+        pricing: {
+            "200g": 150,
+            "500g": 320,
+            "1kg": 580
+        },
         packing: "Glass Jars / Cans",
         shelfLife: "18 Months",
         ingredients: "Sugar, Pineapple Pulp (45%), Pectin, Citric Acid, Preservative (E211).",
@@ -37,6 +42,11 @@ export const products = [
         image: appleJam,
         category: "Jams",
         sizes: ["200g", "500g", "1kg"],
+        pricing: {
+            "200g": 150,
+            "500g": 320,
+            "1kg": 580
+        },
         packing: "Glass Jars / Cans",
         shelfLife: "18 Months",
         ingredients: "Sugar, Apple Pulp (45%), Pectin, Citric Acid, Preservative (E211).",
@@ -57,6 +67,11 @@ export const products = [
         image: mangoJam,
         category: "Jams",
         sizes: ["200g", "500g", "1kg"],
+        pricing: {
+            "200g": 150,
+            "500g": 320,
+            "1kg": 580
+        },
         packing: "Glass Jars / Cans",
         shelfLife: "18 Months",
         ingredients: "Sugar, Mango Pulp (45%), Pectin, Citric Acid, Preservative (E211).",
@@ -77,6 +92,11 @@ export const products = [
         image: strawberryJam,
         category: "Jams",
         sizes: ["200g", "500g", "1kg"],
+        pricing: {
+            "200g": 150,
+            "500g": 320,
+            "1kg": 580
+        },
         packing: "Glass Jars / Cans",
         shelfLife: "18 Months",
         ingredients: "Sugar, Strawberry Pulp (45%), Pectin, Citric Acid, Preservative (E211).",
@@ -97,6 +117,11 @@ export const products = [
         image: pineappleJam, // Placeholder, ideally should be orangeJam
         category: "Jams",
         sizes: ["200g", "500g", "1kg"],
+        pricing: {
+            "200g": 150,
+            "500g": 320,
+            "1kg": 580
+        },
         packing: "Glass Jars / Cans",
         shelfLife: "18 Months",
         ingredients: "Sugar, Orange Pulp (45%), Pectin, Citric Acid, Preservative (E211).",
@@ -119,6 +144,10 @@ export const products = [
         image: mangoChutney,
         category: "Chutneys",
         sizes: ["300g", "1kg"],
+        pricing: {
+            "300g": 180,
+            "1kg": 450
+        },
         packing: "Glass Jars",
         shelfLife: "12 Months",
         ingredients: "Guava Pulp, Tamarind, Sugar, Spices, Salt.",
@@ -139,6 +168,10 @@ export const products = [
         image: mangoChutney,
         category: "Chutneys",
         sizes: ["300g", "1kg"],
+        pricing: {
+            "300g": 180,
+            "1kg": 450
+        },
         packing: "Glass Jars",
         shelfLife: "12 Months",
         ingredients: "Mango Slices, Sugar, Spices, Salt, Acidity Regulator.",
@@ -159,6 +192,10 @@ export const products = [
         image: mangoChutney,
         category: "Chutneys",
         sizes: ["300g", "1kg"],
+        pricing: {
+            "300g": 180,
+            "1kg": 450
+        },
         packing: "Glass Jars",
         shelfLife: "12 Months",
         ingredients: "Garlic, Dry Red Chillies, Vegetable Oil, Spices, Salt, Acidity Regulator.",
@@ -179,6 +216,10 @@ export const products = [
         image: mangoChutney,
         category: "Chutneys",
         sizes: ["300g", "1kg"],
+        pricing: {
+            "300g": 180,
+            "1kg": 450
+        },
         packing: "Glass Jars",
         shelfLife: "12 Months",
         ingredients: "Tomato Pulp, Sugar, Spices, Salt, Acidity Regulator.",
@@ -201,6 +242,11 @@ export const products = [
         image: mangoChutney,
         category: "Pickles",
         sizes: ["400g", "1kg", "5kg"],
+        pricing: {
+            "400g": 160,
+            "1kg": 380,
+            "5kg": 1500
+        },
         packing: "Glass Jars / Pet Jars",
         shelfLife: "12 Months",
         ingredients: "Raw Mango Pieces, Salt, Mustard Oil, Spices & Condiments, Acidity Regulator (E260).",
@@ -221,6 +267,11 @@ export const products = [
         image: mangoChutney,
         category: "Pickles",
         sizes: ["400g", "1kg", "5kg"],
+        pricing: {
+            "400g": 160,
+            "1kg": 380,
+            "5kg": 1500
+        },
         packing: "Glass Jars / Pet Jars",
         shelfLife: "12 Months",
         ingredients: "Mixed Vegetables (Mango, Carrot, Lime, Green Chilli), Salt, Mustard Oil, Spices, Acidity Regulator (E260).",
@@ -241,6 +292,10 @@ export const products = [
         image: mangoChutney,
         category: "Pickles",
         sizes: ["400g", "1kg"],
+        pricing: {
+            "400g": 160,
+            "1kg": 380
+        },
         packing: "Glass Jars / Pet Jars",
         shelfLife: "12 Months",
         ingredients: "Green Chilli, Salt, Mustard Oil, Spices & Condiments, Acidity Regulator (E260).",
@@ -263,6 +318,10 @@ export const products = [
         image: sarsonSaag,
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Mustard Leaves, Spinach, Ginger, Garlic, Maize Flour, Vegetable Oil, Salt.",
@@ -283,6 +342,10 @@ export const products = [
         image: dalMakhani,
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Black Lentils, Butter, Cream, Tomato, Ginger, Garlic, Spices.",
@@ -303,6 +366,10 @@ export const products = [
         image: sarsonSaag, // Placeholder, ideally should be palakPaneer
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Spinach, Cottage Cheese, Onion, Tomato, Spices, Vegetable Oil.",
@@ -323,6 +390,10 @@ export const products = [
         image: dalMakhani, // Placeholder, ideally should be matarPaneer
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Peas, Cottage Cheese, Onion, Tomato, Spices, Vegetable Oil.",
@@ -343,6 +414,10 @@ export const products = [
         image: sarsonSaag, // Placeholder, ideally should be kadhiPakora
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Yogurt, Gram Flour, Onion Fritters, Spices, Vegetable Oil.",
@@ -363,6 +438,10 @@ export const products = [
         image: dalMakhani, // Placeholder, ideally should be chanaMasala
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Chickpeas, Onion, Tomato, Vegetable Oil, Spices, Salt.",
@@ -383,6 +462,10 @@ export const products = [
         image: dalMakhani, // Placeholder, ideally should be rajmaMasala
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Red Kidney Beans, Onion, Tomato, Vegetable Oil, Spices, Salt.",
@@ -403,6 +486,10 @@ export const products = [
         image: sarsonSaag, // Placeholder, ideally should be bainganBharta
         category: "Ready to Eat",
         sizes: ["300g", "500g"],
+        pricing: {
+            "300g": 120,
+            "500g": 195
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Roasted Eggplant, Onion, Tomato, Spices, Vegetable Oil.",
@@ -425,6 +512,10 @@ export const products = [
         image: cannedLitchi,
         category: "Canned Food",
         sizes: ["400g", "800g"],
+        pricing: {
+            "400g": 180,
+            "800g": 340
+        },
         packing: "Cans",
         shelfLife: "36 Months",
         ingredients: "Litchi, Water, Sugar, Citric Acid.",
@@ -445,6 +536,10 @@ export const products = [
         image: cannedLitchi, // Placeholder, ideally should be cannedMangoSlice
         category: "Canned Food",
         sizes: ["400g", "800g"],
+        pricing: {
+            "400g": 180,
+            "800g": 340
+        },
         packing: "Cans",
         shelfLife: "36 Months",
         ingredients: "Mango Slices, Water, Sugar, Citric Acid.",
@@ -465,6 +560,10 @@ export const products = [
         image: cannedLitchi, // Placeholder, ideally should be cannedPeachHalves
         category: "Canned Food",
         sizes: ["400g", "800g"],
+        pricing: {
+            "400g": 180,
+            "800g": 340
+        },
         packing: "Cans",
         shelfLife: "36 Months",
         ingredients: "Peach Halves, Water, Sugar, Citric Acid.",
@@ -485,6 +584,10 @@ export const products = [
         image: cannedLitchi, // Placeholder, ideally should be cannedPearHalves
         category: "Canned Food",
         sizes: ["400g", "800g"],
+        pricing: {
+            "400g": 180,
+            "800g": 340
+        },
         packing: "Cans",
         shelfLife: "36 Months",
         ingredients: "Pear Halves, Water, Sugar, Citric Acid.",
@@ -505,6 +608,10 @@ export const products = [
         image: cannedLitchi, // Placeholder, ideally should be cannedPineappleSlice
         category: "Canned Food",
         sizes: ["400g", "800g"],
+        pricing: {
+            "400g": 180,
+            "800g": 340
+        },
         packing: "Cans",
         shelfLife: "36 Months",
         ingredients: "Pineapple Slices, Water, Sugar, Citric Acid.",
@@ -525,6 +632,10 @@ export const products = [
         image: cannedLitchi, // Placeholder, ideally should be cannedRedCherries
         category: "Canned Food",
         sizes: ["400g", "800g"],
+        pricing: {
+            "400g": 180,
+            "800g": 340
+        },
         packing: "Cans",
         shelfLife: "36 Months",
         ingredients: "Red Cherries, Water, Sugar, Citric Acid.",
@@ -547,6 +658,12 @@ export const products = [
         image: mangoChutney, // Placeholder, ideally should be tomatoKetchup
         category: "Sauces",
         sizes: ["200g", "500g", "1kg", "5kg"],
+        pricing: {
+            "200g": 80,
+            "500g": 180,
+            "1kg": 320,
+            "5kg": 1400
+        },
         packing: "Glass Bottles / Pet Bottles / Cans",
         shelfLife: "18 Months",
         ingredients: "Tomato Paste (28%), Sugar, Salt, Vinegar, Spices, Stabilizers.",
@@ -567,6 +684,9 @@ export const products = [
         image: mangoChutney, // Placeholder, ideally should be bakedBeans
         category: "Sauces",
         sizes: ["400g"],
+        pricing: {
+            "400g": 220
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Navy Beans, Tomato Sauce, Sugar, Salt, Spices, Modified Starch.",
@@ -587,6 +707,10 @@ export const products = [
         image: mangoChutney,
         category: "Sauces",
         sizes: ["200g", "500g"],
+        pricing: {
+            "200g": 100,
+            "500g": 220
+        },
         packing: "Glass Bottles",
         shelfLife: "18 Months",
         ingredients: "Mixed Vegetables, Sugar, Vinegar, Spices, Salt, Preservatives.",
@@ -607,6 +731,10 @@ export const products = [
         image: mangoChutney,
         category: "Sauces",
         sizes: ["200g", "500g"],
+        pricing: {
+            "200g": 90,
+            "500g": 200
+        },
         packing: "Glass Bottles",
         shelfLife: "18 Months",
         ingredients: "Green Chillies, Vinegar, Sugar, Salt, Garlic, Spices, Preservatives.",
@@ -627,6 +755,10 @@ export const products = [
         image: mangoChutney, // Placeholder, ideally should be tomatoPuree
         category: "Sauces",
         sizes: ["200g", "800g"],
+        pricing: {
+            "200g": 60,
+            "800g": 180
+        },
         packing: "Cans",
         shelfLife: "24 Months",
         ingredients: "Tomato Paste, Water, Salt, Citric Acid.",
