@@ -3,8 +3,9 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { useCart } from '../context/CartContext';
 
 const CartIcon = () => {
-    const { cartItems, setIsCartOpen, getCartCount } = useCart();
+    const { setIsCartOpen, getCartCount } = useCart();
     const itemCount = getCartCount();
+
 
     return (
         <button

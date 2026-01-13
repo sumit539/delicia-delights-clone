@@ -5,17 +5,16 @@ import { FaCheckCircle, FaBox, FaTruck } from 'react-icons/fa';
 const OrderConfirmation = () => {
     const { orderId } = useParams();
     const navigate = useNavigate();
-    const [orderDetails, setOrderDetails] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         // Fetch order details from backend (optional)
         // For now, we'll just display the order ID
         setTimeout(() => {
-            setOrderDetails({ orderId });
             setLoading(false);
         }, 500);
     }, [orderId]);
+
 
     if (loading) {
         return (
